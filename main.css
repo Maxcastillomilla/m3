@@ -7,7 +7,8 @@
   
 }
 
-
+/* 595d64 */
+/* background-color: #21232a; */
 
 *
 {
@@ -15,7 +16,8 @@
     padding: 0;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    background-color: #21232a;
+    background-color: #595d64;
+    font-size: 11px;
 }
 
 /* html,
@@ -26,21 +28,18 @@ body
 
 
 
-body
-{
-    overflow: hidden;
-}
 
 
 
 #logo{
-  position: absolute;
+  position: fixed;
   padding: 7px;
+  z-index: 999;
 }
 
 
 .titulo{
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 
@@ -70,12 +69,17 @@ min-height: 100vh;
     max-width: 100%;
     min-height: 50vh;
     background-color: var(--backgra);
+
+    position: fixed;
+
+    z-index: 5;
     
     
     /* height:100%;
     width: 100%; */
     /* outline: none; */
 }
+
 
 
 #conter{
@@ -90,11 +94,11 @@ min-height: 100vh;
     
     
     width: 100%;
-    height: 35px;
+    height: 22px;
 }
 
 .form__service{
-  margin-top: 5px;
+  margin-top: 2px;
     z-index: 2;
     
     
@@ -114,11 +118,11 @@ min-height: 100vh;
 
 
 .slider {
-    margin-top: 5px;
+    margin-top: 4px;
     z-index: 2;
     
     
-    width: 85%;
+    width: 77%;
     height: 3px;
 
 
@@ -155,7 +159,7 @@ min-height: 100vh;
   }
 
   .slidecontainer{
-    background-color: #21232a;
+    background-color: #595d64;
   }
 
   #recuadro{
@@ -163,23 +167,131 @@ min-height: 100vh;
     display: block;
    margin: auto;
    padding: 20px;
-   padding-bottom: 50px;
-   padding-top: 30px;
+   padding-bottom: 20px;
+   padding-top: 20px;
    margin-right: 200px;
    margin-left: 17px;
     width: 80%;
 
-    margin-top: 7vh;
+    margin-top: 20px;
 
-    background-color: #21232a ;
+    background-color: #595d64;
     border-width:2px;
     border-style:solid;
     border-radius: 8px;
     border-color: #d3d3d3;
+
+    /* overflow: hidden; */
     
     
   }
 
+
+ /*  nuevo */
+
+ #carrocompra{
+  margin-top: 10px;
+  width: 25%;
+  float: left;
+  /* top: 20px; */
+  
+  transition: 0.5s;
+ }
+
+
+ #carrocompra:hover{
+  scale: 1.05;
+ }
+
+   /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+
+  margin-top: 8px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliderb {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderb:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderb {
+  background-color: #04AA6D;
+}
+
+input:focus + .sliderb {
+  box-shadow: 0 0 1px #04AA6D;
+}
+
+input:checked + .sliderb:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.sliderb.round {
+  border-radius: 25px;
+}
+
+.sliderb.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+#materialimage{
+  margin-top: 15px;
+  width: 40%;
+}
+
+#derecha{
+  justify-content: flex-start;
+  display: flex;
+}
+
+#precio{
+  
+  padding-left: 10%;
+  margin-top: calc(13% - 15px);
+  font-size: 30px;
+
+  
+
+
+ 
+}
 
 
 
@@ -198,16 +310,16 @@ min-height: 100vh;
     #recuadro{
     
       display: block;
-     margin: auto;
+     margin-top: 15px;
      padding: 20px;
-     padding-bottom: 30px;
+     padding-bottom: 10px;
      padding-top: 20px;
      
       width: 80%;
   
       
   
-      background-color: #21232a ;
+      background-color: #595d64 ;
       border-width:2px;
       border-style:solid;
       border-radius: 8px;
@@ -215,10 +327,30 @@ min-height: 100vh;
     }
 
 
+    .webgl
+    {
+        
+        
+        max-height: 60vh;
+      }
+    
+
+
 
 
 
 
   }
+
+
+
+
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=main.css.map*/
